@@ -1,5 +1,4 @@
-package BAEKJOON;
-
+package algorithm.BAEKJOON;
 import java.util.Scanner;
 
 public class AG_BJ_1001 {

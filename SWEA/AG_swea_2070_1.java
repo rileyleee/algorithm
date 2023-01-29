@@ -1,28 +1,23 @@
-package SWEA;
+package algorithm.SWEA;
+
 import java.util.Scanner;
 
 public class AG_swea_2070_1 {
 	public static void main(String[] args) {
+		// 배열 사용하지 않는 방법
 		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		int[] arr = new int[2];
+		int T = sc.nextInt();
 
-		for (int i = 1; i < t + 1; i++) {
-			String result = null;
-			
-			for (int j = 0; j < 2; j++) {
-				arr[j] = sc.nextInt();
-			}
-			
-			if (arr[0] > arr[1]) {
-				result = ">";
-			} else if (arr[0] < arr[1]) {
-				result = "<";
+		for (int i = 1; i < T + 1; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			if (a > b) {
+				System.out.println("#" + i + " " + ">");
+			} else if (a < b) {
+				System.out.println("#" + i + " " + "<");
 			} else {
-				result = "=";
+				System.out.println("#" + i + " " + "=");
 			}
-			
-			System.out.println("#" + i + " " + result);
 		}
 		sc.close();
 	}

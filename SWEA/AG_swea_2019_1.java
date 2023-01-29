@@ -1,16 +1,17 @@
-package SWEA;
+package algorithm.SWEA;
+
 import java.util.Scanner;
 
 public class AG_swea_2019_1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		for (int i = 0; i < n + 1; i++) {
-			int multi = 1;
-			for (int j = 1; j < i + 1; j++) {
-				multi *= 2;
-			}
-			System.out.print(multi + " ");
+		int result = 1;
+		int two = sc.nextInt();
+		System.out.print(result + " ");
+
+		for (int i = 1; i < two + 1; i++) {
+			result = result * 2;
+			System.out.print(result + " ");
 		}
 		sc.close();
 	}

@@ -1,4 +1,5 @@
-package SWEA;
+package algorithm.SWEA;
+
 
 public class AG_swea_2027 {
 	public static void main(String[] args) {

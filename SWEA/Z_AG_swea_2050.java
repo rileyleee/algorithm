@@ -1,5 +1,5 @@
-package SWEA;
-//import java.util.Scanner;
+package algorithm.SWEA;
+
 
 //charAt 학습차
 public class Z_AG_swea_2050 {
