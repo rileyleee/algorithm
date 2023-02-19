@@ -23,7 +23,7 @@ public class AG_BJ_1439_3 {
 				if (oneSideChk) {
 					oneSideNum++;
 				}
-				oneSideChk = !oneSideChk;
+				oneSideChk = !oneSideChk; // 두개 pass의 한번 씩은 false로 바꿔서 카운팅 되지 않도록 함
 			}
 			str_f = str_s;
 		}

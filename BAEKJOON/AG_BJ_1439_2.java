@@ -17,7 +17,6 @@ public class AG_BJ_1439_2 {
 		}
 
 		int cnt = 0;
-
 		for (int i = 0; i < l - 1; i++) {
 			if (sub[i] != sub[i + 1]) {
 				cnt++;
