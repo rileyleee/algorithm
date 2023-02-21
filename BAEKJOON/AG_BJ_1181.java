@@ -16,7 +16,7 @@ public class AG_BJ_1181 {
 		for (int i = 0; i < wNum; i++) {
 			words[i] = br.readLine();
 		}
-		for (int j = 0; j < wNum - 1; j++) {
+		for (int j = 0; j < wNum - 1; j++) { //comparable로 변경
 			for (int i = 0; i < wNum - 1; i++) {
 				if (words[i].length() > words[i + 1].length()) {
 					String temp = words[i];
