@@ -16,12 +16,13 @@ public class AG_BJ_1085 {
 		int y = Integer.parseInt(st.nextToken());
 		int w = Integer.parseInt(st.nextToken());
 		int h = Integer.parseInt(st.nextToken());
-
-		int yDifh = h - y;
+		
+		//양쪽 경계와의 차이를 각각 구해서
+		int yDifh = h - y; 
 		int yDif0 = y;
 		int xDiffw = w - x;
 		int xDiff0 = x;
-
+		//최소값 찾기
 		int result = Math.min(Math.min(xDiffw, xDiff0), Math.min(yDif0, yDifh));
 
 		System.out.println(result);
