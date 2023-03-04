@@ -40,6 +40,7 @@ public class AG_BJ_1181 {
 				words[i + 1] = "0";
 			}
 		}
+		
 //		// "0"이 아닌 경우 출력 -> 시간초과
 //		for (int i = 0; i < wNum; i++) {
 //			if (words[i] != "0") {
@@ -50,7 +51,7 @@ public class AG_BJ_1181 {
 		// "0"이 아닌 경우 출력
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < wNum; i++) {
-			if (words[i] != "0") {
+			if (!words[i].equals("0")) {
 				sb.append(words[i]).append("\n");
 			}
 		}
