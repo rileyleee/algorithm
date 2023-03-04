@@ -1,4 +1,4 @@
-package algorithm.BAEKJOON;
+package algorithm.SWEA;
 
 import java.util.Scanner;
 
