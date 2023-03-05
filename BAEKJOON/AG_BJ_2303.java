@@ -1,8 +1,8 @@
-package algorithm.SWEA;
+package algorithm.BAEKJOON;
 
 import java.util.Scanner;
 
-public class AG_swea_2303 {
+public class AG_BJ_2303 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();

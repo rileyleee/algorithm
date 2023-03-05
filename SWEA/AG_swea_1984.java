@@ -3,7 +3,7 @@ package algorithm.SWEA;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class AG_swea_1984 {
+public class AG_swea_1984 { // 20분 소요 -> 초기값을 설정할 때 주의하자. 더해지는 건지 덮어씌워지는 건지 구분
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
