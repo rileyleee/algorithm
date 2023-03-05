@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class AG_swea_15706_1 {
+public class AG_swea_15706_1 { // 큐 활용 완전탐색 아님 다른 테케는 틀림
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
