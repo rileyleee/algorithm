@@ -18,29 +18,35 @@ public class AG_BJ_18511 {
 		length = String.valueOf(n).length();
 		int k = sc.nextInt();
 
-		kArr = new int[k]; // 같거나 작으니까 배열 길이 고정 가능
+		kArr = new int[k];
 		for (int a = 0; a < kArr.length; a++) {
 			kArr[a] = sc.nextInt();
 		}
-		nNum = new int[length];
-		rec(0);
-		System.out.println(max);
+
+		for (int l = length; l > 0; l--) {
+			nNum = new int[l];
+			rec(0, l);
+			if (max != 0) {
+				System.out.println(max);
+				break;
+			}
+		}
 
 		sc.close();
 
 	}
 
-	private static int rec(int i) {
+	private static int rec(int i, int l) {
 		// 기저조건
-		if (i == length) {
+		if (i == l) {
 			sb = new StringBuilder();
 
-			for (int s = 0; s < length; s++) {
+			for (int s = 0; s < l; s++) {
 				sb.append(nNum[s]);
 			}
-			System.out.println("문자열: " + sb.toString());
+			// System.out.println("문자열: " + sb.toString());
 			int num = Integer.parseInt(sb.toString());
-			System.out.println("num: " + num);
+			// System.out.println("num: " + num);
 			if (num <= n && num > max) {
 				max = num;
 			}
@@ -50,10 +56,10 @@ public class AG_BJ_18511 {
 		else {
 			for (int j = 0; j < kArr.length; j++) {
 				nNum[i] = kArr[j];
-				System.out.println(Arrays.toString(nNum));
-				rec(i + 1);
+				// System.out.println(Arrays.toString(nNum));
+				rec(i + 1, l);
 				nNum[i] = 0;
-				System.out.println(Arrays.toString(nNum));
+				// System.out.println(Arrays.toString(nNum));
 			}
 		}
 		return max;

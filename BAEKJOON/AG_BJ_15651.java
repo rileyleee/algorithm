@@ -38,7 +38,7 @@ public class AG_BJ_15651 {
 				recurrence(i + 1);
 				System.out.println("재귀갔다옴");
 				selected[i] = 0;
-				System.out.println("0으로 만들었쥬");
+				System.out.println("0으로 만들었쥬"); //넌 필요한 게 아니었구나...
 
 			}
 		}
