@@ -34,8 +34,8 @@ public class AG_BJ_15652 { // 같은 수 허용// 순서는 없음
 		} else {// 재귀조건
 			for (int num = 1; num <= n; num++) {
 				if (selected[i - 1] <= num) {
-					System.out.println("i: " + i);
-					System.out.println("num: " + num);
+					//System.out.println("i: " + i);
+					//System.out.println("num: " + num);
 					selected[i] = num;
 					System.out.println("selected[i]: " + selected[i]);
 				}else {
